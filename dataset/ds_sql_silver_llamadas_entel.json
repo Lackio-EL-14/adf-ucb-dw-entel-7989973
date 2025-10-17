@@ -1,0 +1,100 @@
+{
+	"name": "ds_sql_silver_llamadas_entel",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Ls_sql_dw_entel",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Silver"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "tipo_servicio",
+				"type": "varchar"
+			},
+			{
+				"name": "tipo_registro",
+				"type": "varchar"
+			},
+			{
+				"name": "numero_a",
+				"type": "varchar"
+			},
+			{
+				"name": "imei_a",
+				"type": "varchar"
+			},
+			{
+				"name": "rbs_utilizada_a",
+				"type": "varchar"
+			},
+			{
+				"name": "celda_a",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "latitud_celda_a",
+				"type": "decimal",
+				"precision": 9,
+				"scale": 6
+			},
+			{
+				"name": "longitud_celda_a",
+				"type": "decimal",
+				"precision": 9,
+				"scale": 6
+			},
+			{
+				"name": "numero_b",
+				"type": "varchar"
+			},
+			{
+				"name": "imei_b",
+				"type": "varchar"
+			},
+			{
+				"name": "rbs_utilizada_b",
+				"type": "varchar"
+			},
+			{
+				"name": "celda_b",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "latitud_celda_b",
+				"type": "decimal",
+				"precision": 9,
+				"scale": 6
+			},
+			{
+				"name": "longitud_celda_b",
+				"type": "decimal",
+				"precision": 9,
+				"scale": 6
+			},
+			{
+				"name": "fecha",
+				"type": "date"
+			},
+			{
+				"name": "hora",
+				"type": "time",
+				"scale": 7
+			},
+			{
+				"name": "duracion_segundos",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "SILVER",
+			"table": "LLAMADAS_ENTEL"
+		}
+	}
+}
