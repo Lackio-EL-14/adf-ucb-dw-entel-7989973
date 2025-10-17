@@ -1,0 +1,76 @@
+{
+	"name": "ds_sql_llamadas_bronze",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Ls_sql_dw_entel",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Bronze"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "TIPO_SERVICIO",
+				"type": "varchar"
+			},
+			{
+				"name": "TIPO_REGISTRO",
+				"type": "varchar"
+			},
+			{
+				"name": "NUMERO_A",
+				"type": "varchar"
+			},
+			{
+				"name": "IMEI_A",
+				"type": "varchar"
+			},
+			{
+				"name": "RBS_UTILIZADA_A",
+				"type": "varchar"
+			},
+			{
+				"name": "CELDA_A",
+				"type": "varchar"
+			},
+			{
+				"name": "LATITUD_LONGITUD_CELDA_A",
+				"type": "varchar"
+			},
+			{
+				"name": "NUMERO_B",
+				"type": "varchar"
+			},
+			{
+				"name": "IMEI_B",
+				"type": "varchar"
+			},
+			{
+				"name": "RBS_UTILIZADA_B",
+				"type": "varchar"
+			},
+			{
+				"name": "CELDA_B",
+				"type": "varchar"
+			},
+			{
+				"name": "LATITUD_LONGITUD__CELDA_B",
+				"type": "varchar"
+			},
+			{
+				"name": "FECHA",
+				"type": "varchar"
+			},
+			{
+				"name": "DURACION",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "BRONZE",
+			"table": "Llamadas"
+		}
+	}
+}
